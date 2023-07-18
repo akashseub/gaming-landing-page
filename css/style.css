@@ -83,24 +83,25 @@ body {
 /* =================navigation bar end here========== */
 
 /* banner section style  */
-/* .banner-section{
-    
-} */
+.banner-section{
+    background-image: url(../images/group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 .banner-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* margin: 0 148px; */
+    
 }
 
 .banner-text-content {
-    background-image: url(../images/group\ 14.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     /* padding: 148px 0; */
     width: 100%;
     padding-left: 20px;
+    
 }
 
 .banner-text-highlight {
@@ -160,13 +161,60 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.gammer-text-content{
+    position: relative;
+    float: right;
+}
 .unleash {
     font-weight: 700;
 }
 
 
+/* online game card style  */
+.online-game-text-content{
+    text-align: center;
+}
 
+.online-game-card{
+    display: flex;
+    /* gap: 24px; */
+    justify-content: space-around;
+}
 
+.card{
+    padding: 20px;
+}
+
+/* category section design  */
+.category-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.game:hover{
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #FF42A5;
+}
+
+.game p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.game img{
+    width: 60px;
+    margin-right: 16px;
+}
 
 
 

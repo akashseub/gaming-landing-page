@@ -59,6 +59,7 @@ body {
     text-decoration: none;
     margin-right: 20px;
     align-items: center;
+    font-weight: 500;
 }
 
 .nav-follow-section {
@@ -82,15 +83,24 @@ body {
 /* =================navigation bar end here========== */
 
 /* banner section style  */
-.banner-section {
-    background-image: url(../images/group\ 14.png);
-    background-repeat: no-repeat;
-}
+/* .banner-section{
+    
+} */
 
 .banner-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin: 0 148px; */
+}
+
+.banner-text-content{
+    background-image: url(../images/group\ 14.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* padding: 148px 0; */
+    width: 100%;
+    padding-left: 20px;
 }
 
 .banner-text-highlight {
@@ -107,10 +117,12 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 .banner-text-item{
     margin: 40px 0;
+    font-weight: 500;
 }
 
 .banner-text-item img{
@@ -121,7 +133,39 @@ body {
     background-color: #4EC5F7;
 }
 
-/* .banner-image{
+.banner-image img{
     position: relative;
     bottom: 0;
-} */
+}
+
+@media screen and (max-width: 576px) {
+    .nav-container,
+    .nav-content>ul,
+    .nav-content
+    {
+        flex-direction: column;
+    }
+
+    .banner-content{
+        padding: 0;
+    }
+
+    .nav-content ul li{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .nav-container{
+        margin-bottom: 30px;
+    }
+
+    .banner-content{
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner-image img{
+        width: 100%;
+    }
+}

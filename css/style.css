@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
 }
 
-.btn-primary{
+.btn-primary {
     padding: 15px 40px;
     border-radius: 48px;
     border: 0;
@@ -94,10 +94,10 @@ body {
     /* margin: 0 148px; */
 }
 
-.banner-text-content{
+.banner-text-content {
     background-image: url(../images/group\ 14.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     /* padding: 148px 0; */
     width: 100%;
     padding-left: 20px;
@@ -120,52 +120,87 @@ body {
     margin: 0;
 }
 
-.banner-text-item{
+.banner-text-item {
     margin: 40px 0;
     font-weight: 500;
 }
 
-.banner-text-item img{
+.banner-text-item img {
     width: 15px;
 }
 
-.btn-go-rogue{
+.btn-go-rogue {
     background-color: #4EC5F7;
 }
 
-.banner-image img{
+.banner-image img {
     position: relative;
     bottom: 0;
 }
 
+
+/* gammer section start here  */
+.we-are-gammer {
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.we-are-gammer .gammer-text-content p {
+    text-align: right;
+}
+
+.gammer-header {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.unleash {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
+
     .nav-container,
     .nav-content>ul,
-    .nav-content
-    {
+    .nav-content {
         flex-direction: column;
     }
 
-    .banner-content{
+    .banner-content {
         padding: 0;
     }
 
-    .nav-content ul li{
+    .nav-content ul li {
         text-align: center;
         margin: 20px 0;
     }
 
-    .nav-container{
+    .nav-container {
         margin-bottom: 30px;
     }
 
-    .banner-content{
+    .banner-content {
         flex-direction: column-reverse;
         padding: 0;
         margin: 0;
     }
 
-    .banner-image img{
+    .banner-image img {
         width: 100%;
     }
 }

@@ -6,9 +6,19 @@ body {
     /* padding: 0 240px; */
 }
 
-.content-width{
+.content-width {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.btn-primary{
+    padding: 15px 40px;
+    border-radius: 48px;
+    border: 0;
+    text-transform: uppercase;
+    background-color: #FF42A5;
+    color: #fff;
+    font-weight: 600;
 }
 
 /* navigation bar style */
@@ -23,6 +33,7 @@ body {
     font-size: 45px;
     font-weight: 700;
     display: flex;
+    cursor: pointer;
 }
 
 .nav-logo img {
@@ -34,7 +45,7 @@ body {
     margin-left: 10px;
 }
 
-.nav-content{
+.nav-content {
     align-items: center;
     display: flex;
 }
@@ -57,12 +68,60 @@ body {
     padding: 10px 20px;
 }
 
-.nav-follow-section a{
+.nav-follow-section a {
     text-decoration: none;
-    margin-right:20px;
+    margin-right: 20px;
 }
 
 .nav-content img {
     margin-right: 10px;
     width: 20px;
+    cursor: pointer;
 }
+
+/* =================navigation bar end here========== */
+
+/* banner section style  */
+.banner-section {
+    background-image: url(../images/group\ 14.png);
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-text-highlight {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-text-title {
+    font-size: 6rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-text-item{
+    margin: 40px 0;
+}
+
+.banner-text-item img{
+    width: 15px;
+}
+
+.btn-go-rogue{
+    background-color: #4EC5F7;
+}
+
+/* .banner-image{
+    position: relative;
+    bottom: 0;
+} */

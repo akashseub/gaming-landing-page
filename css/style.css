@@ -595,3 +595,45 @@ footer .policy p {
     }
 
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .we-are-gammer,
+    .instant-play-section,
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .footer-content{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .online-game-card{
+        flex-wrap: wrap;
+    }
+
+    .footer-content {
+        padding: 35px;
+    }
+
+    footer .selection ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .policy ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .instant-play-section .upper-position-image {
+        width: 50%;
+        position: relative;
+    }
+
+    .footer-content .icon-link{
+        flex-wrap: wrap;
+    }
+}

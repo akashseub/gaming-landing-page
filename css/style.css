@@ -169,7 +169,6 @@ nav {
 }
 
 .we-are-gammer .gammer-button {
-    text-align: right;
     float: right;
     display: block;
 }
@@ -201,6 +200,57 @@ nav {
 .online-game {
     margin-top: 50px;
 }
+.card {
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    width: 342px;
+  }
+  
+  .card-image {
+    position: relative;
+  }
+  
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 4px solid #ff42a4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .card-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .play-button {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+  }
+  
+  .watch-now {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+
 
 .online-game-text-content {
     text-align: center;
@@ -231,16 +281,12 @@ nav {
     cursor: pointer;
 }
 
-.online-game-card .special-image:hover {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('../images/rectangle\ 7.png'), lightgray 50% / cover no-repeat;
-    z-index: 0;
-}
-
 /* instant play section style  */
 .instant-play-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
 }
@@ -404,7 +450,24 @@ footer .policy p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 576px) {
+
+
 
     .nav-container,
     .nav-content>ul,
@@ -461,18 +524,22 @@ footer .policy p {
     }
 
     .we-are-gammer .gammer-button {
-        text-align: center;
-        justify-content: center;
+        margin-right: 30%;
     }
 
 
     .instant-play-section {
-        padding: 0 30px;
+        padding: 0;
         width: 100%;
+        height: 100%;
     }
 
     .instant-play-image-content img {
-        width: 700px;
+        width: 100%;
+    }
+
+    .instant-play-image-content{
+        height: 500px;
     }
 
     .instant-play-text-content {
@@ -494,6 +561,14 @@ footer .policy p {
         width: 100%;
     }
 
+    .game img{
+        width: 35px;
+    }
+
+    .game p{
+        font-size: 14px;
+    }
+
     .footer-content {
         padding: 35px;
     }
@@ -501,11 +576,6 @@ footer .policy p {
     footer .selection ul {
         flex-wrap: wrap;
         gap: 20px;
-    }
-
-    footer .icon-link {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     footer .policy ul {
@@ -518,6 +588,10 @@ footer .policy p {
     .instant-play-section .upper-position-image {
         width: 50%;
         position: relative;
+    }
+
+    .footer-content .icon-link{
+        flex-wrap: wrap;
     }
 
 }

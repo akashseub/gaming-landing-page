@@ -238,21 +238,22 @@ nav {
 
 /* instant play section style  */
 .instant-play-section {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
 }
 
 .instant-play-text-content {
     align-items: center;
-    padding-top: 150px;
+    /* padding-top: 10px; */
     padding-left: 140px;
     padding-right: 140px;
 }
 
-.instant-play-image-content{
+.instant-play-image-content {
+    position: relative;
     height: 790px;
 }
 
@@ -277,8 +278,9 @@ nav {
 }
 
 .instant-play-section .down-position-image {
-    position: relative;
-    left: 150px;
+    /* position: relative;
+    left: 150px; */
+    margin-left: 150px;
 }
 
 /* category section design  */
@@ -374,7 +376,7 @@ footer .icon-link {
     justify-content: center;
 }
 
-footer .icon-link img{
+footer .icon-link img {
     cursor: pointer;
 }
 
@@ -406,7 +408,10 @@ footer .policy p {
 
     .nav-container,
     .nav-content>ul,
-    .nav-content {
+    .nav-content,
+    .we-are-gammer,
+    .online-game-card,
+    .instant-play-section {
         flex-direction: column;
     }
 
@@ -432,4 +437,87 @@ footer .policy p {
     .banner-image img {
         width: 100%;
     }
+
+    .card {
+        align-items: center;
+        text-align: center;
+    }
+
+    .instant-play-section {
+        grid-template-columns: 1fr;
+    }
+
+    .instant-play-image-content {
+        width: 100%;
+    }
+
+    .gammer-image-content img {
+        width: 100%;
+    }
+
+    .we-are-gammer p,
+    .we-are-gammer .gammer-header {
+        text-align: center;
+    }
+
+    .we-are-gammer .gammer-button {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .instant-play-section {
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .instant-play-image-content img {
+        width: 700px;
+    }
+
+    .instant-play-text-content {
+        align-items: center;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    .instant-play-header {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .instant-play-section .down-position-image {
+        /* position: relative;
+        left: 150px; */
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-content {
+        padding: 35px;
+    }
+
+    footer .selection ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer .icon-link {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .policy ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .instant-play-section .upper-position-image {
+        width: 50%;
+        position: relative;
+    }
+
 }
